@@ -27,7 +27,7 @@ vim.opt.rtp:prepend(lazypath)
 
 -- Load Plugins
 require('lazy').setup("plugins", {
-  default = {
+  defaults = {
     lazy = true
   },
   install = {

@@ -1,0 +1,32 @@
+{
+  // Do not select first Suggestion
+  "suggest.noselect": true,
+
+  // UI
+  "suggest.floatConfig": {
+    "rounded": true,
+    "border": true
+  },
+  
+  // Icons
+  "diagnostic.infoSign": "",
+  "diagnostic.hintSign": "󰠠",
+  "diagnostic.warningSign": "",
+  "diagnostic.errorSign": "",
+
+  // Diagnostic
+  "diagnostic.refreshOnInsertMode": true,
+
+  // Check Current Line
+  "diagnostic.checkCurrentLine": true,
+
+  // Inlay Hints
+  "inlayHint.refreshOnInsertMode": true,
+
+  // Virtual Text
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextCurrentLineOnly": false,
+  "diagnostic.virtualTextPrefix": "  ",
+  "suggest.virtualText": true,
+
+}

@@ -157,7 +157,7 @@ return {
     ins_left {
       -- Lsp server name .
       function()
-        local msg = 'No Active LSP'
+        local msg = '󰄛'
         local coc_status = vim.fn['coc#status']()
 
         if not coc_status or coc_status == '' then

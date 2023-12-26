@@ -14,6 +14,36 @@
   "diagnostic.warningSign": "",
   "diagnostic.errorSign": "",
 
+  // Popup Suggestion Box Icons
+  "suggest.completionItemKindLabels": {
+    "text": "󰊄 Text",
+    "method": " Method",
+    "function": "󰊕 Function",
+    "constructor": " Constructor",
+    "field": " Field",
+    "variable": " Variable",
+    "class": " Class",
+    "interface": " Interface",
+    "module": "󱁻 Module",
+    "property": " Property",
+    "unit": " Unit",
+    "value": " Value",
+    "enum": " Enum",
+    "keyword": "󱌣 Keyword",
+    "snippet": " Snippet",
+    "color": "󰉦 Color",
+    "file": " File",
+    "reference": " Refrence",
+    "folder": " Directory",
+    "enumMember": " Enum Member",
+    "constant": " Constant",
+    "struct": " Struct",
+    "event": " Event",
+    "operator": " Operator",
+    "typeParameter": "󰈩 Type Param",
+    "default": ""
+  },
+
   // Diagnostic
   "diagnostic.refreshOnInsertMode": true,
 

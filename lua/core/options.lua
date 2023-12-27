@@ -46,3 +46,6 @@ opt.signcolumn = "yes"
 -- Clipboard
 opt.clipboard = "unnamedplus"
 
+-- Fold
+opt.foldmethod = "indent"
+opt.foldlevel = 9999

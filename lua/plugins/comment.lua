@@ -1,6 +1,8 @@
 return {
   "numToStr/Comment.nvim",
-  keys = { "<C-k>" },
+  keys = {
+    "<C-k>", "v", "i"
+  },
   dependencies = {
     "JoosepAlviste/nvim-ts-context-commentstring",
   },

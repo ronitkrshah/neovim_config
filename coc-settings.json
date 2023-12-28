@@ -59,15 +59,4 @@
   "diagnostic.virtualTextPrefix": "  ",
   "suggest.virtualText": true,
 
-  // Custom LSP Server ( Dir = '~/.lsp/<langugae>')
-  "languageserver": {
-
-    // Lua LSP
-    "lua": {
-      "command": "~/.lsp/lua/bin/lua-language-server",
-      "rootPatterns": [".git"],
-      "filetypes": ["lua"]
-    }
-  }
-
 }

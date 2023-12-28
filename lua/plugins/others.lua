@@ -20,5 +20,12 @@ return {
     init = function()
       vim.g.mkdp_filetypes = { "markdown" }
     end
+  },
+
+  -- Dressing Nvim
+  {
+    "stevearc/dressing.nvim",
+    event = "VeryLazy",
+    opts = {}
   }
 }

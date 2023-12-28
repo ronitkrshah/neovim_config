@@ -44,6 +44,10 @@ return {
           warning = " ",
           error = " ",
         },
+      },
+      select_prompts = true,
+      notify = {
+        threshold = vim.log.levels.ERROR,
       }
     })
 

@@ -1,5 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  dependencies = {"hiphish/rainbow-delimiters.nvim"},
   build = ":TSUpdate",
   event = { "BufReadPre", "BufNewFile" },
   config = function()

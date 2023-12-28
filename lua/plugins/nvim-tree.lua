@@ -3,7 +3,7 @@ return {
   dependencies = {
     "nvim-tree/nvim-web-devicons"
   },
-  keys = { "<leader>ee", "<leader>ef" },
+  lazy = false,
   config = function()
 
     -- Recommended

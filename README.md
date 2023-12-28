@@ -14,10 +14,10 @@ This Neovim setup is geared towards simplicity and efficiency. Most of the plugi
 
 * **Lazy Loading**: Plugins are loaded on-demand, ensuring a quick and responsive Neovim experience.
 * **Completion with coc.nvim**: Enjoy powerful completion using **coc.nvim** for an enhanced coding experience.
-* **Fast Startup**: Last time when i checked it was **0.06 secs**(If i'm not wrong) on Termux
+* **Fast Startup**: Last time when i checked it was **0.07 secs**(If i'm not wrong) on Termux
     ```log
-    059.790  004.771: first screen update
-    059.794  000.003: --- NVIM STARTED ---
+    070.558  001.239: first screen update
+    070.561  000.003: --- NVIM STARTED ---
     ```
 
 <br />

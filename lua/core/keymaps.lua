@@ -23,11 +23,6 @@ keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
 keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 
--- Tab Switching
-keymap("n", "<A-,>", ":tabprevious<CR>", opts)
-keymap("n", "<A-.>", ":tabnext<CR>", opts)
-keymap("n", "<A-x>", ":tabclose<CR>", opts)
-
 --
 -- INSERT MODE
 --

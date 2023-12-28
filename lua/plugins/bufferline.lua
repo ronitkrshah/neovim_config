@@ -19,5 +19,12 @@ return {
         end,
       },
     }
+
+    -- Keymap
+    local keymap = vim.api.nvim_set_keymap
+
+    keymap("n", "<A-.>", ":BufferLineCycleNext<CR>", {silent = true})
+    keymap("n", "<A-,>", ":BufferLineCyclePrev<CR>", {silent = true})
+    keymap("n", "<A-x>", ":q<CR>", {silent = true})
   end
 }

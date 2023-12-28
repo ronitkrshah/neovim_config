@@ -4,7 +4,7 @@ return {
   {
     "echasnovski/mini.indentscope",
     version = "*",
-    keys = { "j" },
+    keys = { "j", "k", "l", "h", "i", "G" },
     config = function ()
       require('mini.indentscope').setup({
         symbol = "▎"

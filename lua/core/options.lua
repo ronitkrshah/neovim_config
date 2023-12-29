@@ -3,7 +3,7 @@ local opt = vim.opt
 
 -- Line Number
 opt.number = true
-opt.relativenumber = false
+opt.relativenumber = true
 
 -- Line Wrap
 opt.wrap = false

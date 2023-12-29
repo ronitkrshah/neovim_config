@@ -26,6 +26,7 @@ This Neovim setup is geared towards simplicity and efficiency. Most of the plugi
 
 * **clang**: Required for treesitter syntax highlighting.
 * **Node.js**: Necessary for LSP (Language Server Protocol) and completion with coc.nvim.
+* **Nerd Font**: Required for icons. [Nerd Fonts](https://www.nerdfonts.com)
 
 <br />
 

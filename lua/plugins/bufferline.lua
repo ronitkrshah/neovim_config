@@ -14,7 +14,7 @@ return {
         diagnostics = "coc",
         diagnostics_update_in_insert = true,
         diagnostics_indicator = function(count, level)
-          local icon = level:match("error") and " " or ""
+          local icon = level:match("error") and " " or " "
           return " " .. icon .. count
         end,
       },
@@ -25,6 +25,5 @@ return {
 
     keymap("n", "<A-.>", ":BufferLineCycleNext<CR>", {silent = true})
     keymap("n", "<A-,>", ":BufferLineCyclePrev<CR>", {silent = true})
-    keymap("n", "<A-x>", ":q<CR>", {silent = true})
   end
 }

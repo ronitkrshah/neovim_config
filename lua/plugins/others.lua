@@ -27,5 +27,17 @@ return {
     "stevearc/dressing.nvim",
     event = "VeryLazy",
     opts = {}
+  },
+
+  -- Buff Delete for bufferline.nvim
+  {
+    "famiu/bufdelete.nvim",
+    keys = { "<A-x>" },
+    cmd = {"Bdelete", "Bwipeout"},
+    config = function()
+      local keymap = vim.api.nvim_set_keymap
+
+      keymap("n", "<A-x>", ":Bdelete<CR>", {silent = true})
+    end
   }
 }

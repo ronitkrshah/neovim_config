@@ -39,5 +39,14 @@ return {
 
       keymap("n", "<A-x>", ":Bdelete<CR>", {silent = true})
     end
+  },
+
+  -- Git Signs
+  {
+    "lewis6991/gitsigns.nvim",
+    event = {"BufReadPost"},
+    config = function()
+      require('gitsigns').setup()
+    end
   }
 }

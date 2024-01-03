@@ -59,4 +59,6 @@
   "diagnostic.virtualTextPrefix": "  ",
   "suggest.virtualText": true,
 
+  // COC Snippet
+  "snippets.ultisnips.pythonPrompt": false
 }

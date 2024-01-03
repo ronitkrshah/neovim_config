@@ -7,7 +7,7 @@ return {
     keys = { "j", "k", "l", "h", "i", "G" },
     config = function ()
       require('mini.indentscope').setup({
-        symbol = "▎"
+        symbol = "▏"
       })
     end
   },

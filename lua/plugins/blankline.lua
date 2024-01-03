@@ -1,13 +1,15 @@
 return {
   -- Github Link
   'lukas-reineke/indent-blankline.nvim',
-
-  -- Event VeryLazy
-  event = 'VeryLazy',
+  event = { "BufReadPre", "BufNewFile" },
 
   -- Setup
   config = function()
-    require('ibl').setup()
+    require('ibl').setup({
+      indent = {
+        char = "▏"
+      }
+    })
   end
 
 }

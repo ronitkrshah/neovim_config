@@ -1,21 +1,15 @@
--- Default Tokyonight
 return {
-  "folke/tokyonight.nvim",
+  "rebelot/kanagawa.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-
-    -- Setup Configurations
-    require('tokyonight').setup({
-      -- moon | storm | day | night
-      style = "moon",
-      styles = {
-        functions = { italic = true, bold = true },
-        keywords = { italic = false }
-      }
+    require("kanagawa").setup({
+      theme = "dragon",
+      background = {
+        dark = "wave"
+      },
+      functionStyle = {italic = true, bold = true},
     })
 
-    -- Apply Colorscheme
-    vim.cmd('colorscheme tokyonight')
-  end
+    vim.cmd("colorscheme kanagawa") end
 }

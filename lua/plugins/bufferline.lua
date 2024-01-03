@@ -8,9 +8,6 @@ return {
 
     bufferline.setup {
       options = {
-        indicator = {
-          icon = " 󰄛 "
-        },
         diagnostics = "coc",
         diagnostics_update_in_insert = true,
         diagnostics_indicator = function(count, level)

@@ -44,8 +44,21 @@ return {
     -- Quick Rename F2
     keyset("n", "<F2>", "<Plug>(coc-rename)", {silent = true})
 
+    -- Diagnostics
+    keyset("n", "gf", "<Plug>(coc-diagnostic-prev)", {silent = true})
+    keyset("n", "gh", "<Plug>(coc-diagnostic-next)", {silent = true})
+
+    -- Code Navigation
+    keyset("n", "gd", "<Plug>(coc-definition)", {silent = true})
+    keyset("n", "gy", "<Plug>(coc-type-definition)", {silent = true})
+    keyset("n", "gi", "<Plug>(coc-implementation)", {silent = true})
+    keyset("n", "gr", "<Plug>(coc-references)", {silent = true})
+
     -- Leader + qf for quickfix
     keyset("n", "<leader>qf", "<Plug>(coc-fix-current)", opts)
+
+    -- Remap keys for apply code actions at the cursor position.
+    keyset("n", "<leader>ac", "<Plug>(coc-codeaction-cursor)", opts)
 
     -- Remap <C-f> and <C-b> to scroll float windows/popups
     ---@diagnostic disable-next-line: redefined-local

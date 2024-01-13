@@ -2,6 +2,12 @@
   // Do not select first Suggestion
   "suggest.noselect": true,
 
+  // UI
+  "suggest.floatConfig": {
+    "border": true,
+    "rounded": true
+  },
+
   // Icons
   "diagnostic.infoSign": "",
   "diagnostic.hintSign": "󰠠",
@@ -43,6 +49,9 @@
 
   // Virtual Text
   "suggest.virtualText": true,
+
+  // Links
+  "links.highlight": true,
 
   // COC Snippet
   "snippets.ultisnips.pythonPrompt": false

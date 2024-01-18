@@ -21,5 +21,6 @@
   "plenary.nvim": { "branch": "master", "commit": "55d9fe89e33efd26f532ef20223e5f9430c8b0c0" },
   "pretty-fold.nvim": { "branch": "master", "commit": "a7d8b424abe0eedf50116c460fbe6dfd5783b1d5" },
   "rainbow-delimiters.nvim": { "branch": "master", "commit": "739a034046465d2b100151037401c24c42cb09cf" },
+  "rose-pine": { "branch": "main", "commit": "ae445417f4fde24b24fd1224624f0bedab5ae304" },
   "todo-comments.nvim": { "branch": "main", "commit": "4a6737a8d70fe1ac55c64dfa47fcb189ca431872" }
 }

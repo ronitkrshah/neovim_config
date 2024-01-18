@@ -54,5 +54,19 @@
   "links.highlight": true,
 
   // COC Snippet
-  "snippets.ultisnips.pythonPrompt": false
+  "snippets.ultisnips.pythonPrompt": false,
+
+  // Format On Save
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json",
+    "graphql",
+    "handlebars",
+    "html",
+    "css",
+    "markdown"
+  ]
 }

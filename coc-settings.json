@@ -49,6 +49,9 @@
 
   // Virtual Text
   "suggest.virtualText": true,
+  "diagnostic.virtualText": true,
+  "diagnostic.virtualTextPrefix": "   ",
+  "diagnostic.virtualTextCurrentLineOnly": false,
 
   // Links
   "links.highlight": true,

@@ -17,11 +17,33 @@ return {
     end
   },
 
+  -- Catppuccin
+  {
+    "catppuccin/nvim",
+    name= "catppuccin",
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require("catppuccin").setup({
+        flavour = 'macchiato',
+        background = {
+          light = 'latte',
+          dark = 'macchiato'
+        },
+        styles = {
+          functions = {"italic", "bold"}
+        }
+      })
+
+      vim.cmd("colorscheme catppuccin")
+    end
+  },
+
   -- One Monokai
   {
     "cpea2506/one_monokai.nvim",
-    lazy = false,
-    priority = 1000,
+    -- lazy = false,
+    -- priority = 1000,
     config = function()
       require("one_monokai").setup({
         themes = function(colors)

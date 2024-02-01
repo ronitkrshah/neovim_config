@@ -87,7 +87,11 @@ return {
 
     -- Global Extensions
     vim.g.coc_global_extensions = {
-      'coc-pairs'
+      'coc-pairs',
+      'coc-prettier',
+      'coc-snippets',
+      -- Friendly Snippets
+      'https://github.com/rafamadriz/friendly-snippets@main'
     }
   end
 }

@@ -54,12 +54,6 @@ return {
     keyset("n", "gi", "<Plug>(coc-implementation)", {silent = true})
     keyset("n", "gr", "<Plug>(coc-references)", {silent = true})
 
-    -- Leader + qf for quickfix
-    keyset("n", "<leader>qf", "<Plug>(coc-fix-current)", opts)
-
-    -- Remap keys for apply code actions at the cursor position.
-    keyset("n", "<leader>ac", "<Plug>(coc-codeaction-cursor)", opts)
-
     -- Remap <C-f> and <C-b> to scroll float windows/popups
     ---@diagnostic disable-next-line: redefined-local
     local opts = {silent = true, nowait = true, expr = true}
@@ -79,11 +73,6 @@ return {
         command = "silent call CocActionAsync('highlight')",
         desc = "Highlight symbol under cursor on CursorHold"
     })
-
-    -- Use CTRL-S for selections ranges
-    -- Requires 'textDocument/selectionRange' support of language server
-    keyset("n", "<C-s>", "<Plug>(coc-range-select)", {silent = true})
-    keyset("x", "<C-s>", "<Plug>(coc-range-select)", {silent = true})
 
     -- Global Extensions
     vim.g.coc_global_extensions = {

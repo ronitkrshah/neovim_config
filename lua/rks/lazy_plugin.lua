@@ -14,5 +14,13 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     spec = "rks.lazy",
     change_detection = { notify = false },
-    defaults = { lazy = true }
+    defaults = { lazy = true },
+    performance = {
+      rtp = {
+        disabled_plugins = {
+          "netrw",
+          "netrwPlugin"
+        }
+      }
+    }
 })

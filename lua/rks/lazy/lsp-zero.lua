@@ -5,7 +5,6 @@ return {
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/nvim-cmp",
     "L3MON4D3/LuaSnip",
-
   },
   event = { "BufReadPre", "BufNewFile" },
   config = function()
@@ -22,6 +21,14 @@ return {
       warn = '',
       hint = '',
       info = ''
+    })
+
+    -- Show Diagnostc on hover
+    vim.api.nvim_create_autocmd({ "CursorHold", "CursorHoldI" }, {
+      group = vim.api.nvim_create_augroup("float_diagnostic", { clear = true }),
+      callback = function ()
+        vim.diagnostic.open_float(nil, {focus=false})
+      end
     })
 
     -- Servers

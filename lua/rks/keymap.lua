@@ -7,7 +7,7 @@ vim.g.mapleader = " "
 vim.keymap.set("i", "jk", "<ESC>")
 
 -- Netrw File Explorer
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>ee", vim.cmd.Ex)
 
 -- Move lines without copy
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")

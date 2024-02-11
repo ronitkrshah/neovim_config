@@ -6,10 +6,6 @@ return {
   lazy = false,
   config = function()
 
-    -- Recommended
-    vim.g.loaded_netrw = 1
-    vim.g.loaded_netrwPlugin = 1
-
     -- change color for arrows in tree to light blue
     vim.cmd([[ highlight NvimTreeFolderArrowClosed guifg=#3FC5FF ]])
     vim.cmd([[ highlight NvimTreeFolderArrowOpen guifg=#3FC5FF ]])
@@ -45,17 +41,21 @@ return {
           error = " ",
         },
       },
+      -- Dressing nvim
       select_prompts = true,
       notify = {
         threshold = vim.log.levels.ERROR,
+      },
+      actions = {
+        open_file = {
+          -- Closes the explorer when opening a file.
+          quit_on_open = true
+        }
       }
     })
 
     -- Custom Mappings
-    local keymap = vim.api.nvim_set_keymap
-
-    keymap("n", "<Leader>ee", ":NvimTreeToggle<CR>", { silent = true} )
-    keymap("n", "<Leader>ef", ":NvimTreeFindFile<CR>", { silent = true} )
+    vim.keymap.set("n", "<Leader>ee", ":NvimTreeToggle<CR>", { silent = true} )
 
   end
 }

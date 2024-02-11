@@ -80,7 +80,8 @@ return {
       'coc-prettier',
       'coc-snippets',
       -- Friendly Snippets
-      'https://github.com/rafamadriz/friendly-snippets@main'
+      'https://github.com/rafamadriz/friendly-snippets@main',
+      'coc-tsserver'
     }
   end
 }

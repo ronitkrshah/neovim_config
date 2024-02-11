@@ -1,6 +1,7 @@
 return {
   'neoclide/coc.nvim',
-  branch = 'release',
+  branch = 'master',
+  build = 'npm ci',
   event = { "BufReadPre", "BufNewFile" },
   config = function()
 

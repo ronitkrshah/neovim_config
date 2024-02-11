@@ -10,7 +10,7 @@
 
   // Icons
   "diagnostic.infoSign": "",
-  "diagnostic.hintSign": "󰠠",
+  "diagnostic.hintSign": "",
   "diagnostic.warningSign": "",
   "diagnostic.errorSign": "",
 

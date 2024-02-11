@@ -4,9 +4,7 @@ return {
   version = "*",
   event = 'UiEnter',
   config = function ()
-    local bufferline = require('bufferline')
-
-    bufferline.setup {
+    require('bufferline').setup {
       options = {
         diagnostics = "coc",
         diagnostics_update_in_insert = true,

@@ -5,9 +5,7 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   config = function()
 
-    local treesitter = require("nvim-treesitter.configs")
-
-    treesitter.setup({
+    require("nvim-treesitter.configs").setup({
       -- Required parsers
       ensure_installed = { "c", "lua", "vim", "vimdoc", "query" },
       highlight = {

@@ -43,16 +43,6 @@ return {
     end
   },
 
-  -- Preview .md files in realtime
-  {
-    "iamcco/markdown-preview.nvim",
-    build = "cd app && npm install",
-    ft = "markdown",
-    init = function()
-      vim.g.mkdp_filetypes = { "markdown" }
-    end
-  },
-
   -- Replace stock Ui of vim prompt
   {
     "stevearc/dressing.nvim",
@@ -66,9 +56,7 @@ return {
     keys = { "<A-x>" },
     cmd = {"Bdelete", "Bwipeout"},
     config = function()
-      local keymap = vim.api.nvim_set_keymap
-
-      keymap("n", "<A-x>", ":Bdelete<CR>", {silent = true})
+      vim.keymap.set("n", "<A-x>", ":Bdelete<CR>", {silent = true})
     end
   },
 

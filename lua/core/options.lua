@@ -1,51 +1,53 @@
 -- Shorthand
 local opt = vim.opt
 
--- Line Number
+-- Number
 opt.number = true
 opt.relativenumber = true
 
 -- Line Wrap
 opt.wrap = false
 
--- Tab
+-- Indentation
 opt.tabstop = 2
 opt.shiftwidth = 2
 opt.softtabstop = 2
 opt.expandtab = true
 
--- Auto Indent
-opt.autoindent = true
+opt.smartindent = true
 
 -- Search
 opt.ignorecase = true
 opt.smartcase = true
 
--- Cursor Line
+-- Cursor
 opt.cursorline = true
-
--- Backup
-opt.backup = false
-opt.writebackup = false
-
--- Update Time (Default 4000ms)
-opt.updatetime = 300
 
 -- True Colors
 opt.termguicolors = true
 
--- Swapfile
+-- Backup
 opt.swapfile = false
+opt.backup = false
+opt.writebackup = false
 
--- Scroll Off
+-- Disable Highlight
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
+
+-- Scroll
 opt.scrolloff = 10
+
+-- Updatetime
+opt.updatetime = 100
+
+-- Color column
+opt.colorcolumn = "80"
 
 -- Sign Column
 opt.signcolumn = "yes"
 
--- Clipboard
-opt.clipboard = "unnamedplus"
-
 -- Fold
 opt.foldmethod = "indent"
 opt.foldlevel = 9999
+

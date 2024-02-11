@@ -1,51 +1,32 @@
--- Options
-local opts = { noremap = true, silent = true }
+-- Inspired by : ThePrimeagen's neovimrc
 
--- Shorthand
-local keymap = vim.api.nvim_set_keymap
-
--- Set Leader Key
+-- The LEADER
 vim.g.mapleader = " "
 
---
--- NORMAL MODE
---
+-- Quickly Escape
+vim.keymap.set("i", "jk", "<ESC>")
 
--- Window Navigation
-keymap("n", "<Leader>h", "<C-w>h", opts)
-keymap("n", "<Leader>j", "<C-w>j", opts)
-keymap("n", "<Leader>k", "<C-w>k", opts)
-keymap("n", "<Leader>l", "<C-w>l", opts)
+-- Move lines without copy
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- Keep cursor center while searching
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
+-- Don't exit visual mode after indent
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
+
+-- Keep old text after pasting
+vim.keymap.set("x", "<leader>p", [["_dP]])
+
+-- Don't throw invalid register error
+vim.keymap.set("n", "Q", "<nop>")
 
 -- Resize Window Using Arrow Keys
-keymap("n", "<C-Up>", ":resize -2<CR>", opts)
-keymap("n", "<C-Down>", ":resize +2<CR>", opts)
-keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
-keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
-
---
--- INSERT MODE
---
-
--- Quick Escape
-keymap("i", "jk", "<ESC>", opts)
-
---
--- VISUAL MODE
---
-
--- Stay in indent mode
-keymap("v", "<", "<gv", opts)
-keymap("v", ">", ">gv", opts)
-
--- Yank
-keymap("v", "p", '"_dP', opts)
-
-
----
---- TERMINAL MODE
----
-
--- Escape From Terminal Mode with CTRL+t+e
-keymap('t', '<C-t>e', '<C-\\><C-n>', { noremap = true, silent = true })
+vim.keymap.set("n", "<C-Up>", ":resize -2<CR>")
+vim.keymap.set("n", "<C-Down>", ":resize +2<CR>")
+vim.keymap.set("n", "<C-Left>", ":vertical resize -2<CR>")
+vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>")
 

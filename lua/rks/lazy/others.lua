@@ -72,5 +72,15 @@ return {
             -- Configuration here, or leave empty to use defaults
         })
     end
+  },
+
+  -- Buffer Delete
+  {
+    "famiu/bufdelete.nvim",
+    keys = { "<A-x>" },
+    cmd = {"Bdelete", "Bwipeout"},
+    config = function()
+      vim.keymap.set("n", "<A-x>", ":Bdelete<CR>", {silent = true})
+    end
   }
 }

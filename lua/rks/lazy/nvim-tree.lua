@@ -41,12 +41,20 @@ return {
           error = " ",
         },
       },
+      -- Dressing nvim
       select_prompts = true,
       notify = {
         threshold = vim.log.levels.ERROR,
+      },
+      actions = {
+        open_file = {
+          -- Closes the explorer when opening a file.
+          quit_on_open = true
+        }
       }
     })
 
+    -- Custom Mappings
     vim.keymap.set("n", "<Leader>ee", ":NvimTreeToggle<CR>", { silent = true} )
 
   end

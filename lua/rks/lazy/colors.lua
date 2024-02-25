@@ -1,17 +1,11 @@
 return {
-  "folke/tokyonight.nvim",
+  'AlexvZyl/nordic.nvim',
   lazy = false,
   priority = 1000,
   config = function()
-    require("tokyonight").setup({
-      terminal_colors = true,
-      styles = {
-        -- BG Styles : dark | transparent | normal
-        sidebars = "dark",
-        floats = "dark"
-      }
-    })
+    require('nordic').setup({})
 
-    vim.cmd.colorscheme("tokyonight")
+    -- Apply colorscheme
+    vim.cmd.colorscheme("nordic")
   end
 }

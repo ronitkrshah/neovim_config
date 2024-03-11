@@ -1,11 +1,17 @@
 return {
-  'AlexvZyl/nordic.nvim',
+  'EdenEast/nightfox.nvim',
   lazy = false,
   priority = 1000,
   config = function()
-    require('nordic').setup({})
+    require("nightfox").setup({
+      options = {
+        styles = {
+          comments = "italic",
+          functions = "bold,italic",
+        }
+      }
+    })
 
-    -- Apply colorscheme
-    vim.cmd.colorscheme("nordic")
+    vim.cmd.colorscheme("nordfox")
   end
 }

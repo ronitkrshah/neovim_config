@@ -33,7 +33,7 @@ return {
     })
 
     -- Servers
-    lsp.setup_servers({ "tsserver", "eslint", "html", "cssls" })
+    lsp.setup_servers({ "eslint", "html", "cssls" })
 
     lsp.setup()
 

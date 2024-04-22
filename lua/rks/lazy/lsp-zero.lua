@@ -15,7 +15,7 @@ return {
     "L3MON4D3/LuaSnip",
     "rafamadriz/friendly-snippets"
   },
-  event = { "BufReadPre", "BufNewFile" },
+  lazy = false,
   config = function()
 
     local lsp = require("lsp-zero")
@@ -33,8 +33,12 @@ return {
     })
 
     -- Servers
-    lsp.setup_servers({ "tsserver", "eslint", "html", "cssls" })
-
+    require('mason').setup()
+    require('mason-lspconfig').setup({
+      handlers = {
+        lsp.default_setup
+       },
+    })
     lsp.setup()
 
     -- =============================================================

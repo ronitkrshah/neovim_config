@@ -17,7 +17,7 @@ return {
     "echasnovski/mini.indentscope",
     version = "*",
     keys = { "j", "k", "l", "h", "i", "G" },
-    config = function ()
+    config = function()
       require('mini.indentscope').setup({
         symbol = "▏"
       })
@@ -29,16 +29,14 @@ return {
     'numToStr/FTerm.nvim',
     keys = { '<A-i>' },
     config = function()
-
       require('FTerm').setup({
         -- Double Border
-        border = { "╔", "═" ,"╗", "║", "╝", "═", "╚", "║"},
+        border = { "╔", "═", "╗", "║", "╝", "═", "╚", "║" },
       })
 
       -- Custom Keymap
       vim.keymap.set('n', '<A-i>', '<CMD>lua require("FTerm").toggle()<CR>')
       vim.keymap.set('t', '<A-i>', '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
-
     end
   },
 
@@ -56,7 +54,7 @@ return {
   -- Vim Git Integration
   {
     "lewis6991/gitsigns.nvim",
-    event = {"BufReadPost"},
+    event = { "BufReadPost" },
     config = function()
       require('gitsigns').setup()
     end
@@ -68,9 +66,9 @@ return {
     version = "*", -- Use for stability; omit to use `main` branch for the latest features
     event = "VeryLazy",
     config = function()
-        require("nvim-surround").setup({
-            -- Configuration here, or leave empty to use defaults
-        })
+      require("nvim-surround").setup({
+        -- Configuration here, or leave empty to use defaults
+      })
     end
   },
 
@@ -78,9 +76,19 @@ return {
   {
     "famiu/bufdelete.nvim",
     keys = { "<A-x>" },
-    cmd = {"Bdelete", "Bwipeout"},
+    cmd = { "Bdelete", "Bwipeout" },
     config = function()
-      vim.keymap.set("n", "<A-x>", ":Bdelete<CR>", {silent = true})
+      vim.keymap.set("n", "<A-x>", ":Bdelete<CR>", { silent = true })
+    end
+  },
+
+  -- Auto tag
+  {
+    "windwp/nvim-ts-autotag",
+    lazy = false,
+    config = function()
+      require("nvim-ts-autotag").setup()
     end
   }
+
 }

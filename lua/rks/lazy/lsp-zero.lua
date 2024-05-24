@@ -17,11 +17,10 @@ return {
   },
   lazy = false,
   config = function()
-
     local lsp = require("lsp-zero")
 
     lsp.on_attach(function(client, bufnr)
-      lsp.default_keymaps({buffer = bufnr})
+      lsp.default_keymaps({ buffer = bufnr })
     end)
 
     -- Diagnostic Icons
@@ -35,22 +34,23 @@ return {
     -- Servers
     require('mason').setup()
     require('mason-lspconfig').setup({
+      ensure_installed = { "eslint" },
       handlers = {
         lsp.default_setup
-       },
+      },
     })
     lsp.setup()
 
     -- =============================================================
     _G.LspDiagnosticsPopupHandler = function()
-    local current_cursor = vim.api.nvim_win_get_cursor(0)
-    local last_popup_cursor = vim.w.lsp_diagnostics_last_cursor or {nil, nil}
+      local current_cursor = vim.api.nvim_win_get_cursor(0)
+      local last_popup_cursor = vim.w.lsp_diagnostics_last_cursor or { nil, nil }
 
-    -- Show the popup diagnostics window,
-    -- but only once for the current cursor location (unless moved afterwards).
+      -- Show the popup diagnostics window,
+      -- but only once for the current cursor location (unless moved afterwards).
       if not (current_cursor[1] == last_popup_cursor[1] and current_cursor[2] == last_popup_cursor[2]) then
         vim.w.lsp_diagnostics_last_cursor = current_cursor
-        vim.diagnostic.open_float(0, {scope="cursor"})
+        vim.diagnostic.open_float(0, { scope = "cursor" })
       end
     end
     vim.cmd [[
@@ -68,8 +68,8 @@ return {
       sources = {
         { name = 'path' },
         { name = 'nvim_lsp' },
-        { name = 'buffer'},
-        { name = 'luasnip'},
+        { name = 'buffer' },
+        { name = 'luasnip' },
       },
       mapping = {
         ["<C-Space>"] = cmp.mapping.complete(),

@@ -14,7 +14,7 @@ return {
 
     -- snippets
     "L3MON4D3/LuaSnip",
-    "saadparwaiz1/cmp_luasnip"
+    "saadparwaiz1/cmp_luasnip",
   },
   lazy = false,
   config = function()

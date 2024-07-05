@@ -20,20 +20,13 @@ return {
   config = function()
     local cmp = require("cmp")
     local capabilities = vim.tbl_deep_extend("force",
-      {
-        workspace = {
-          didChangeWatchedFiles = {
-            dynamicRegistration = false,
-          },
-        },
-      },
       vim.lsp.protocol.make_client_capabilities(),
       require('cmp_nvim_lsp').default_capabilities()
     )
     require("mason").setup()
     require("mason-lspconfig").setup({
       handlers = {
-        function (server)
+        function(server)
           require("lspconfig")[server].setup({
             capabilities = capabilities
           })
@@ -46,7 +39,7 @@ return {
             settings = {
               Lua = {
                 diagnostics = {
-                  globals = {"vim"},
+                  globals = { "vim" },
                 }
               }
             }
@@ -78,7 +71,7 @@ return {
         { name = 'luasnip' },
       }, {
         { name = 'buffer' },
-        })
+      })
     })
 
     -- show borders on hover

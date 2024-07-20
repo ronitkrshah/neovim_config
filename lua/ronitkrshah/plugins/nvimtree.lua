@@ -5,7 +5,6 @@ return {
   },
   lazy = false,
   config = function()
-
     -- change color for arrows in tree to light blue
     vim.cmd([[ highlight NvimTreeFolderArrowClosed guifg=#3FC5FF ]])
     vim.cmd([[ highlight NvimTreeFolderArrowOpen guifg=#3FC5FF ]])
@@ -41,6 +40,7 @@ return {
           error = "E",
         },
       },
+      select_prompts = true,
       notify = {
         threshold = vim.log.levels.ERROR,
       },
@@ -50,6 +50,5 @@ return {
         }
       }
     })
-
   end
 }

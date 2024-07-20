@@ -69,6 +69,17 @@ return {
     end
   },
 
+  -- Replace stock Ui of vim prompt
+  {
+    "stevearc/dressing.nvim",
+    event = "VeryLazy",
+    config = function()
+      require("dressing").setup({
+        title_pos = "left",
+      })
+    end
+  },
+
   -- Auto tag
   {
     "windwp/nvim-ts-autotag",

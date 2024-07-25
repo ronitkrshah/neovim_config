@@ -46,6 +46,3 @@ opt.colorcolumn = "80"
 
 -- sign column
 opt.signcolumn = "yes"
-
--- Set Cursor to block
-vim.cmd("set guicursor=i:block")
